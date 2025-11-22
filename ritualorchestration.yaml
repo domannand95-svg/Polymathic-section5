@@ -1,0 +1,11 @@
+ritual:
+  max_depth: 4
+  loop_delay_seconds: 5
+
+model:
+  embedding_dim: 32
+  vocab_size: 100
+
+logging:
+  file: ritual_orchestration.log
+  level: DEBUG
