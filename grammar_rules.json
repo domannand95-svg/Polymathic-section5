@@ -1,0 +1,58 @@
+{
+  "rules": {
+    "S": {
+      "expansions": [
+        {"sequence": ["א", "ב", "ג"], "weight": 0.7},
+        {"sequence": ["ד", "ה", "ו"], "weight": 0.3}
+      ],
+      "optional": false
+    },
+    "א": {
+      "expansions": [
+        {"sequence": ["ט", "י"], "weight": 1.0}
+      ],
+      "optional": true
+    },
+    "ב": {
+      "expansions": [
+        {"sequence": ["כ", "ל", "מ"], "weight": 1.0}
+      ],
+      "optional": false
+    },
+    "ג": {
+      "expansions": [
+        {"sequence": ["נ", "ס"], "weight": 1.0}
+      ],
+      "optional": false
+    },
+    "ד": {
+      "expansions": [
+        {"sequence": ["ע", "פ"], "weight": 1.0}
+      ],
+      "optional": true
+    },
+    "ה": {
+      "expansions": [
+        {"sequence": ["צ", "ק"], "weight": 1.0}
+      ],
+      "optional": true
+    },
+    "ו": {
+      "expansions": [
+        {"sequence": ["ר", "ש"], "weight": 1.0}
+      ],
+      "optional": false
+    },
+    // Additional symbol rules can be added here following the same pattern
+    "|": {
+      "expansions": [
+        {"sequence": ["·"], "weight": 1.0}
+      ],
+      "optional": true
+    },
+    "·": {
+      "expansions": [],
+      "optional": true
+    }
+  }
+}
